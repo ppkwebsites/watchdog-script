@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 set VM_NAME=pfsense
-set PFSENSE_IP=192.168.1.2
+set PFSENSE_IP=192.168.1.1
 set SHOWN_ONLINE_MSG=0
 
 :: Ask user with timeout
