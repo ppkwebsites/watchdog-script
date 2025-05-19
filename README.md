@@ -9,8 +9,9 @@
  /_____/   U
       ppk
 
-
-A simple batch script to monitor and restart a pfSense VM running in VirtualBox if it becomes unreachable.
+Windows script
+--------------
+A simple batch script to monitor and restart pfSense VM running in VirtualBox on Windows if it becomes unreachable.
 
 🛠 Features
 ✅ User confirmation prompt (with 10s timeout).
