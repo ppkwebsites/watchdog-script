@@ -11,7 +11,7 @@
 
 Windows script
 --------------
-A simple batch script to monitor and restart pfSense VM running in VirtualBox on Windows if it becomes unreachable.
+A simple batch script and shell script for Windows and Linux to monitor and restart pfSense VM running in VirtualBox on Windows and Linux.
 
 🛠 Features
 ✅ User confirmation prompt (with 10s timeout).
@@ -25,9 +25,9 @@ A simple batch script to monitor and restart pfSense VM running in VirtualBox on
 ✅ Fun ASCII art when pfSense is online!
 
 📜 Script Overview
-Filename: watchdog.bat
+Filename: WatchDog-W.bat and WatchDog-L.sh
 
-This script monitors a pfSense virtual machine by repeatedly pinging its IP address. If it stops responding:
+This script monitors a pfSense virtual machine by repeatedly pinging its IP address every 60 seconds. If it stops responding:
 
 It will forcefully power off the VM.
 
@@ -41,9 +41,11 @@ Resume monitoring.
 1. Set Variables
 At the top of the script, configure:
 
+Windows batch script as example
+-------------------------------
 set VM_NAME=pfsense
 set PFSENSE_IP=192.168.1.1
-2. User Prompt
+3. User Prompt
 When running the script:
 
 It asks if you want to start the watchdog.
